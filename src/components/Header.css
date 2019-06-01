@@ -1,0 +1,191 @@
+ .HeaderContainer {
+   text-align: center;
+   width:100%;
+   height: 70%;
+   z-index:999;
+   position: relative;
+   background: white;
+ }
+
+.Container {
+  position:absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  max-height:90%;
+}
+
+.InputSection div {
+  display:inline;
+}
+
+.Header h1 {
+  color:white;
+  font-family: 'Century Gothic', sans-serif;
+  font-weight:bold;
+  margin: 0 0 20px 0;
+}
+
+.Button a {
+  display: inline-block;
+  padding: 5px 20px;
+  max-width: 200px;
+  border: 2px solid white;
+  border-radius: 30px;
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+  margin: 10px;
+}
+
+.Search {
+  display:inline-block;
+  position:relative;
+  margin-right:20px;
+}
+
+.Search input {
+  min-width: 500px;
+  border-radius: 30px;
+  font-size: 1em;
+  padding: 10px;
+  padding-right:50px;
+  color: black;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.Mag {
+  position:absolute;
+  right:0;
+  bottom:-20%;
+  padding-right:15px;
+  font-size:2em;
+  color:black;
+}
+
+.Mag a {
+  color: #6b6b6b;
+}
+
+.LinkSection, .LinkSection a {
+  color: white;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.Button {
+  display:block;
+  margin-left:20px;
+}
+
+.BodyCopy p, .BodyCopy a, .BodyCopy li {
+  color:white;
+  font-family: 'Century Gothic', sans-serif;
+  margin: 20px 0;
+}
+
+.BodyCopy a {
+  text-decoration:underline;
+}
+
+.FeaturedSection ul {
+  overflow:hidden;
+  color: white;
+}
+
+.FeaturedSection ul a {
+  color: white;
+}
+
+.Tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.Tooltip .TooltipContent {
+  visibility: hidden;
+  width: 200px;
+  text-align: center;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  top:-140px;
+  left:-60px;
+  z-index: 9999;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.Tooltip:hover .TooltipContent {
+  visibility: visible;
+}
+
+.ButtonSection a {
+  background: #504942;
+  padding:5px;
+  border: 1px solid #8a7d7d;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.ActiveButton {
+  background: #312f2c !important;
+}
+
+@media only screen and (max-width: 1275px) {
+  .BodyCopy p {
+    font-size: 14px;
+    margin: 5px 0;
+  }
+  .BodyCopy .NoticeText {
+    font-size:10px !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .Container {
+    width:80%;
+    padding: 20px;
+    display:inline-block;
+  }
+  .Header h1 {
+    font-size: 20px;
+    margin-top:0;
+  }
+  .InputSection {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .Search {
+    margin-right:0;
+  }
+  .Search input {
+    font-size: 1em;
+    padding: 5px;
+    padding-right: 40px;
+    min-width:unset;
+    width: 75%;
+  }
+  .BodyCopy p {
+    font-size: 12px;
+    margin: 10px;
+  }
+  .Button {
+    margin-left: 0;
+  }
+  .Button a {
+    padding: 5px 10px;
+  }
+  .Mag {
+    font-size: 24px;
+  }
+  .FeaturedSection ul {
+    margin: 0;
+  }
+  .LinkSection {
+    display:block;
+    font-size:12px;
+  }
+}
