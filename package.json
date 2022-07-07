@@ -14,7 +14,7 @@
     "express-session": "^1.15.3",
     "file-loader": "^0.11.1",
     "font-awesome": "^4.7.0",
-    "moment": "^2.20.1",
+    "moment": "^2.29.4",
     "react": "^15.5.4",
     "react-background-slider": "^1.2.0",
     "react-device-detect": "^1.6.2",
